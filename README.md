@@ -46,8 +46,8 @@ https://github.com/Yassmin-gamal/selenium.test/assets/66153260/a9f4c49a-dd26-429
 - testing the basic operation involves opening a URL, searching for an item,check Increment and Decrement,  adding it to the cart, check it added .
 
 >test3.java path : selenium.test\src\test\java\com\google\selenium\test\test3.java
-
-![test3](https://github.com/Yassmin-gamal/selenium.test/assets/66153260/01152d20-d40d-4b22-84a0-e370907fdf
+ 
+![test3](https://github.com/Yassmin-gamal/selenium.test/assets/66153260/43dbcf8f-addf-4172-9779-d33621e1f073)
 
 
 https://github.com/Yassmin-gamal/selenium.test/assets/66153260/cc214503-96de-4ad4-9bfa-980aa4674340
