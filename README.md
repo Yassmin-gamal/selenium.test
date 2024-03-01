@@ -10,8 +10,9 @@ browsing, product search and the checkout process.
 #  Website:
 https://egyptlaptop.com/
 
-# Test1.java
+# Test1.java(ChromeDriver)   &   Test4.java(FireFoxDriver)
 
+- Different browsers, same test case.
 - testing the basic operations such as opening a URL, searching for an item, and scrolling down.
 
 >Test1.java path : selenium.test\src\test\java\com\google\selenium\test\Test1.java
