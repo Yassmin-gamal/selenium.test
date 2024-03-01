@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-01T06:00:04 EET" name="Default suite" finished-at="2024-03-01T06:00:34 EET" duration-ms="30113">
+    <groups>
+    </groups>
+    <test started-at="2024-03-01T06:00:04 EET" name="Default test" finished-at="2024-03-01T06:00:34 EET" duration-ms="30113">
+      <class name="com.google.selenium.test.test2">
+        <test-method is-config="true" signature="openURL()[pri:0, instance:com.google.selenium.test.test2@397fbdb]" started-at="2024-03-01T06:00:04 EET" name="openURL" finished-at="2024-03-01T06:00:08 EET" duration-ms="4027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="searchForItem()[pri:0, instance:com.google.selenium.test.test2@397fbdb]" started-at="2024-03-01T06:00:08 EET" name="searchForItem" finished-at="2024-03-01T06:00:12 EET" duration-ms="4077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForItem -->
+        <test-method signature="addItem()[pri:1, instance:com.google.selenium.test.test2@397fbdb]" started-at="2024-03-01T06:00:12 EET" name="addItem" finished-at="2024-03-01T06:00:24 EET" duration-ms="11146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItem -->
+        <test-method signature="checkOut()[pri:2, instance:com.google.selenium.test.test2@397fbdb]" started-at="2024-03-01T06:00:24 EET" name="checkOut" finished-at="2024-03-01T06:00:34 EET" duration-ms="10427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOut -->
+        <test-method is-config="true" signature="closeWebsite()[pri:0, instance:com.google.selenium.test.test2@397fbdb]" started-at="2024-03-01T06:00:34 EET" name="closeWebsite" finished-at="2024-03-01T06:00:34 EET" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebsite -->
+      </class> <!-- com.google.selenium.test.test2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
