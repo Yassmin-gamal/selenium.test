@@ -53,4 +53,22 @@ https://github.com/Yassmin-gamal/selenium.test/assets/66153260/a9f4c49a-dd26-429
 https://github.com/Yassmin-gamal/selenium.test/assets/66153260/cc214503-96de-4ad4-9bfa-980aa4674340
 
 
+# TestNG Reports 
+
+
+>test1
+
+![t1](https://github.com/Yassmin-gamal/selenium.test/assets/66153260/b640b660-bab7-4b55-bc98-3560b4dafe27)
+
+
+>test2
+
+
+![t2](https://github.com/Yassmin-gamal/selenium.test/assets/66153260/dd8f3573-17a7-430e-a06e-1d2d7880e699)
+
+
+>test3
+
+![t3](https://github.com/Yassmin-gamal/selenium.test/assets/66153260/88bf8b32-aa44-4abb-b45d-48ad74bb072c)
+
 
