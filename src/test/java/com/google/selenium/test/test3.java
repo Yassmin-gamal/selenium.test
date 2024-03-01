@@ -37,30 +37,26 @@ public class test3 {
 		driver.findElement(By.className("ty-search-magnifier")).click();
 		TimeUnit.SECONDS.sleep(1);
 
-
 	}
 	@Test(priority=1)
-
-	public void chooseItem() throws InterruptedException {
+           public void chooseItem() throws InterruptedException {
 		
 		driver.findElement(By.className("ut2-gl__image")).click();
 		System.out.println(driver.getTitle());
 		TimeUnit.SECONDS.sleep(1);
+		
 		}
 	@Test(priority=2)
-
-	public void checkIncrementANdDecrement() throws InterruptedException {
+           public void checkIncrementANdDecrement() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(1);
 		System.out.println(driver.getTitle());
 		 
 		
 		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__increase')]")).click();
 		TimeUnit.SECONDS.sleep(1);
-		
 		Assert.assertEquals( "2",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
 		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__decrease')]")).click();
 		Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
-		 
 		TimeUnit.SECONDS.sleep(1);
  
 		
@@ -74,13 +70,11 @@ public class test3 {
 		Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).getText());
 		driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).click();
 		TimeUnit.SECONDS.sleep(1);
-
 		driver.findElement(By.linkText("Checkout")).click();
 	}
 	
 	@AfterTest
-
-	public void closeWebsite() {
+           public void closeWebsite() {
 
 		driver.quit();
 	}
