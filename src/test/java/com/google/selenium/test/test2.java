@@ -16,7 +16,6 @@ public class test2 {
 	@BeforeTest
 	public void openURL () {
 		driver = new ChromeDriver();
-		// driver.navigate().to("https://ww.google.com");
 		driver.manage().window().maximize();
 		driver.navigate().to("https://egyptlaptop.com/");
 
@@ -37,26 +36,9 @@ public class test2 {
 
 	public void addItem() throws InterruptedException {
 		driver.findElement(By.className("ut2-gl__image")).click();
-		System.out.println(driver.getTitle());
-		TimeUnit.SECONDS.sleep(2);
-		
-		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__increase')]")).click();
-		TimeUnit.SECONDS.sleep(2);
-		
-		Assert.assertEquals( "2",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
-		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__decrease')]")).click();
-		Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
-		 
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(1);
 		driver.findElement(By.xpath("//*[contains(@class,'ty-btn__add-to-cart')]")).click();
-		TimeUnit.SECONDS.sleep(2);
-		 
-		
-		//driver.findElement(By.xpath("//*[contains(@class,'cm-notification-close')]")).click();
-		//Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).getText());
-		//driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).click();
-		//TimeUnit.SECONDS.sleep(2);
-
+		TimeUnit.SECONDS.sleep(1);
 		driver.findElement(By.linkText("Checkout")).click();
 		 
 	}
@@ -88,14 +70,6 @@ public class test2 {
 
 		driver.quit();
 	}
-
-
-
-
-
-
-
-
 
 
 }

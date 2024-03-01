@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.google.selenium.test.test2">
+      <class name="com.google.selenium.test.test3">
         <methods>
-          <include name="addItem"/>
           <include name="closeWebsite"/>
-          <include name="checkOut"/>
           <include name="openURL"/>
+          <include name="checkItemAdded"/>
         </methods>
-      </class> <!-- com.google.selenium.test.test2 -->
+      </class> <!-- com.google.selenium.test.test3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

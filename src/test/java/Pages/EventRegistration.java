@@ -16,8 +16,6 @@ public class EventRegistration {
 	By zipCode = By.id("litecheckout_s_zipcode");
 	By checkBox = By.name("accept_terms");
 	By checkOut = By.id("litecheckout_place_order");
-	 
-	 
 	
 	 
 	

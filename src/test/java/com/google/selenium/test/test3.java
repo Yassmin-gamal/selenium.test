@@ -18,58 +18,71 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
- 
-
-
-
 public class test3 {
-	public WebDriver driver ; 
+	ChromeDriver driver;
+
 	@BeforeTest
-   public void openURL () {
-		System.setProperty("webdriver.chrome.driver", 
-				System.getProperty("user.dir")+"\\Resourses\\chromedriver.exe");
+	public void openURL () {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://egyptlaptop.com/");
+
+	}
+
+ 
+     @Test(priority=0)
+	public void searchForItem() throws InterruptedException {
+
+		driver.findElement(By.id("search_input")).sendKeys("Laptop");
+		driver.findElement(By.className("ty-search-magnifier")).click();
+		TimeUnit.SECONDS.sleep(1);
+
+
+	}
+	@Test(priority=1)
+
+	public void chooseItem() throws InterruptedException {
 		
+		driver.findElement(By.className("ut2-gl__image")).click();
+		System.out.println(driver.getTitle());
+		TimeUnit.SECONDS.sleep(1);
+		}
+	@Test(priority=2)
+
+	public void checkIncrementANdDecrement() throws InterruptedException {
+		TimeUnit.SECONDS.sleep(1);
+		System.out.println(driver.getTitle());
 		 
 		
-		driver = new ChromeDriver(); 
-		driver.navigate().to("https://the-internet.herokuapp.com/");
-		driver.manage().window().maximize();
-   }
-   
-  
+		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__increase')]")).click();
+		TimeUnit.SECONDS.sleep(1);
+		
+		Assert.assertEquals( "2",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
+		driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__decrease')]")).click();
+		Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ty-value-changer__input')]")).getAttribute("value"));
+		 
+		TimeUnit.SECONDS.sleep(1);
  
-   
-   @Test
-   public void searchForItem() {
-	   
-		// Get All the links displayed on Page
-		List<WebElement> links = driver.findElements(By.tagName("a"));
 		
-		//Verify there are 41 Links displayed on the page
-		Assert.assertEquals(41, links.size());
+	}
+	@Test(priority=3)
+	public void addToCart() throws InterruptedException {
 		
-		// Print each link value
-		for (WebElement link : links) {
-			System.out.println(link.getAttribute("href"));
-		}
-   }
-   
-   
-   
-   @AfterTest
-   
-   public void closeWebsite() {
-	   
-	   driver.quit();
-   }
-   
-   
-   
-   
-   
-   
-   
-   
-   
+		driver.findElement(By.xpath("//*[contains(@class,'ty-btn__add-to-cart')]")).click();
+		TimeUnit.SECONDS.sleep(1);
+		driver.findElement(By.xpath("//*[contains(@class,'cm-notification-close')]")).click();
+		Assert.assertEquals( "1",driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).getText());
+		driver.findElement(By.xpath("//*[contains(@class,'ut2-icon-use_icon_cart')]")).click();
+		TimeUnit.SECONDS.sleep(1);
+
+		driver.findElement(By.linkText("Checkout")).click();
+	}
+	
+	@AfterTest
+
+	public void closeWebsite() {
+
+		driver.quit();
+	}
    
 }
