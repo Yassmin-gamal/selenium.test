@@ -1,6 +1,6 @@
 # E-commerce Website Testing with Selenium Automation
 
--In this project, working with Selenium Java version 4.18.1, Maven version 3.0.0-M5, TestNG version 7.8.0, all in the Eclipse IDE
+- In this project, working with Selenium Java version 4.18.1, Maven version 3.0.0-M5, TestNG version 7.8.0, all in the Eclipse IDE in pom.xml file
 
 
 #  Objective
