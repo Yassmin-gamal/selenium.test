@@ -3,8 +3,7 @@
 <suite name="First">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="com.google.selenium.test.test2"/>
-       <class name="com.google.selenium.test.test1"/>
+      <class name="com.google.selenium.test.test2"/>  
     </classes>
   </test>  
 </suite>  
