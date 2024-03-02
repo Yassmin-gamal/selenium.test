@@ -1,13 +1,13 @@
 # E-commerce Website Testing with Selenium Automation
 
 
-#  Objective:
+#  Objective
 
 Conduct focused automated testing on critical functionalities of an e-commerce website to
 ensure reliability and user satisfaction. Key areas include categories browsing, products
 browsing, product search and the checkout process.
 
-#  Website:
+#  Website
 https://egyptlaptop.com/
 
 # Test1.java(ChromeDriver)   &   Test4.java(FireFoxDriver)
