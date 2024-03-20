@@ -9,6 +9,12 @@
 ensure reliability and user satisfaction. Key areas include categories browsing, products
 browsing, product search and the checkout process.
 
+# Documentation
+
+- Test Paln , Test Cases , Bug Report , Sumarry Report
+- https://drive.google.com/drive/folders/1ZmKBVlh8RTiBFLuO4pq789tQFyrdJXrN?usp=sharing
+  
+
 #  Website
 - https://egyptlaptop.com/
 
